@@ -7,7 +7,7 @@ export default withSentryConfig(nextConfig, {
 // https://github.com/getsentry/sentry-webpack-plugin#options
 
 org: "hunter-smsm",
-project: "javascript-nextjs",
+project: "i-phone-15",
 
 // Only print logs for uploading source maps in CI
 silent: !process.env.CI,

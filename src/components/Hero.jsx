@@ -48,9 +48,7 @@ function Hero() {
 						autoPlay
 						muted
 						playsInline={true}
-						onLoadedMetadata={() => {
-							console.log("loaded");
-						}}
+						
 					></video>
 				</div>
 			</div>

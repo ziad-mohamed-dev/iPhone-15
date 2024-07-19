@@ -28,6 +28,7 @@ function Hero() {
 
   useGSAP(() => {
     if (loaded) {
+      document.body.style.overflowY = "visible";
       gsap.to(".hero-title", {
         opacity: 1,
         delay: 2,

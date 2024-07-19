@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 function Hero() {
 	const [videoSrc, setVideoSrc] = useState();
+	const [loaded, setLoaded] = useState(false);
 	const ref = useRef();
 
 	function handelVideoSrcSet() {
@@ -25,16 +26,18 @@ function Hero() {
 	}, [videoSrc]);
 
 	useGSAP(() => {
-		gsap.to(".hero-title", {
-			opacity: 1,
-			delay: 2,
-		});
-		gsap.to("#cta", {
-			y: -50,
-			opacity: 1,
-			delay: 2,
-		});
-	}, []);
+		if (loaded) {
+			gsap.to(".hero-title", {
+				opacity: 1,
+				delay: 2,
+			});
+			gsap.to("#cta", {
+				y: -50,
+				opacity: 1,
+				delay: 2,
+			});
+		}
+	}, [loaded]);
 
 	return (
 		<section className="w-full nav-height bg-black relative">
@@ -48,6 +51,9 @@ function Hero() {
 						autoPlay
 						muted
 						playsInline={true}
+						onLoadedData={() => {
+							setLoaded(true);
+						}}
 					></video>
 				</div>
 			</div>

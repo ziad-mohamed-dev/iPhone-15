@@ -123,30 +123,27 @@ function VideoCarousel() {
 					<div key={i} id="slider" className="sm:pr-20 pr-10">
 						<div className="video-carousel_container">
 							<div className="w-full h-full flex-center rounded-3xl overflow-hidden bg-black">
-									<video
-										src={list.video}
-										id="video"
-										playsInline={true}
-										muted
-										preload="auto"
-										ref={(el) => {
-											videosRef.current[i] = el;
-										}}
-										onEnded={() => {
-											hightlightsSlides.length - 1 !== i
-												? handelVideoProcess(
-														"video-end",
-														i
-												  )
-												: handelVideoProcess(
-														"last-video",
-														i
-												  );
-										}}
-										onLoadedMetadata={() => {
-											console.log("loaded");
-										}}
-									></video>
+								<video
+									src={list.video}
+									id="video"
+									playsInline={true}
+									muted
+									preload="auto"
+									ref={(el) => {
+										videosRef.current[i] = el;
+									}}
+									onEnded={() => {
+										hightlightsSlides.length - 1 !== i
+											? handelVideoProcess("video-end", i)
+											: handelVideoProcess(
+													"last-video",
+													i
+											  );
+									}}
+									onLoadedMetadata={() => {
+										console.log("loaded");
+									}}
+								></video>
 							</div>
 							<div className="absolute top-12 left-[5%] z-10">
 								{list.textLists.map((text, i) => (

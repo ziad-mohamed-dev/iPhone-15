@@ -140,9 +140,6 @@ function VideoCarousel() {
 													i
 											  );
 									}}
-									onLoadedMetadata={() => {
-										console.log("loaded");
-									}}
 								></video>
 							</div>
 							<div className="absolute top-12 left-[5%] z-10">

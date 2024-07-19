@@ -14,13 +14,21 @@ export default function Home() {
 			setLoaded(true);
 		}
 		window.addEventListener("load", handelWindowLoad);
+		console.log("added");
 		return () => {
 			window.removeEventListener("load", handelWindowLoad);
+			console.log("added");
 		};
 	}, []);
 
 	return (
-		<main className="bg-black" id="app">
+		<main
+			className="bg-black"
+			id="app"
+			onLoad={() => {
+				console.log("main loaded");
+			}}
+		>
 			{loaded ? (
 				<>
 					<Navbar />

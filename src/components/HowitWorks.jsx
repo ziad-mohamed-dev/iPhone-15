@@ -27,7 +27,7 @@ function HowitWorks() {
 	}, []);
 	return (
 		<section className="common-padding">
-			<div className="screen-max-width">
+			<div className="screen-max-width overflow-hidden">
 				<div id="chip" className="flex-center w-full my-20">
 					<Image src={chipImg} alt="chip" width={180} height={180} />
 				</div>

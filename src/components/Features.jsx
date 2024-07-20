@@ -49,7 +49,7 @@ function Features() {
 					</h1>
 				</div>
 				<div className="flex flex-col justify-center items-center overflow-hidden">
-					<div className="mt-32 mb-24 pl-24">
+					<div className="mt-32 mb-24">
 						<h2 className="text-5xl lg:text-7xl font-semibold">
 							Forged in titanium
 						</h2>
@@ -83,8 +83,8 @@ function Features() {
 								))}
 							</div>
 							<div className="feature-text-container">
-								<div className="flex-1 flex-centet">
-									<div className="feature-text g_text">
+								<div className="flex flex-1 flex-center">
+									<p className="feature-text g_text">
 										iPhone 15 Pro is{" "}
 										<span className="text-white">
 											the first iPhone to feature an
@@ -92,10 +92,10 @@ function Features() {
 										</span>
 										, using the same alloy that spacecrafts
 										use for missions to Mars
-									</div>
+									</p>
 								</div>
-								<div className="flex-1 flex-centet">
-									<div className="feature-text g_text">
+								<div className="flex flex-1 flex-center">
+									<p className="feature-text g_text">
 										Titanium has one of the best
 										strength-to-weight ratios of any metal,
 										making these our{" "}
@@ -104,7 +104,7 @@ function Features() {
 										</span>
 										You'll notice the difference the moment
 										you pick one up.
-									</div>
+									</p>
 								</div>
 							</div>
 						</div>

@@ -5,6 +5,7 @@ import Highlights from "@/components/Highlights";
 import Model from "@/components/Model";
 import Features from "@/components/Features";
 import HowitWorks from "@/components/HowitWorks";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 			<Model />
 			<Features />
 			<HowitWorks />
+			<Footer />
 		</main>
 	);
 }

@@ -103,10 +103,10 @@ function Model() {
 							style={{
 								position: "fixed",
 								top: "0",
-								right: "0",
-								width: "100%",
+								left: "50%",
 								height: "100%",
 							}}
+							className="screen-max-width translate-x-[-50%]"
 							eventSource={eventSource}
 						>
 							<View.Port />

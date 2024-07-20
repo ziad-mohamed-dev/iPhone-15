@@ -27,17 +27,16 @@ function Footer() {
 						Copyright @{new Date().getFullYear()} Apple Inc. All
 						rights reserve.
 					</p>
-					<div className="flex">
+					<div>
 						{footerLinks.map((link, i) => (
-							<p
-								key={i}
-								className="font-semibold text-xs underline text-blue"
-							>
-								{link}{" "}
+							<span key={i}>
+								<span className="font-semibold text-xs underline text-blue cursor-pointer">
+									{link}
+								</span>
 								{i !== footerLinks.length - 1 && (
 									<span className="mx-2 text-gray"> | </span>
 								)}
-							</p>
+							</span>
 						))}
 					</div>
 				</div>

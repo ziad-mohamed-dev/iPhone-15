@@ -33,7 +33,7 @@ function CheckoutForm() {
 			clientSecret,
 			elements,
 			confirmParams: {
-				return_url: "http://localhost:3000",
+				return_url: "https://i-phone-15-delta.vercel.app/",
 			},
 		});
 		if (result.error) {

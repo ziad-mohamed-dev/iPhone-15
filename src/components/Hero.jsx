@@ -4,7 +4,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import Loader from "./Loader";
-import Link from "next/link";
 
 function Hero() {
   const [videoSrc, setVideoSrc] = useState();
@@ -69,9 +68,7 @@ function Hero() {
         id="cta"
         className="flex flex-col items-center opacity-0 translate-y-20"
       >
-        <Link href="/checkout" className="btn">
-          Buy
-        </Link>
+        <button className="btn">Buy</button>
         <p className="font-normal text-xl">From $199/month or $999</p>
       </div>
     </section>
